@@ -1,0 +1,30 @@
+import 'anjing.dart';
+import 'burung.dart';
+import 'ikan.dart';
+void main(){
+  Anjing hewan1 = Anjing(jumlahKaki: 4, berat: 10, kecepatanLari: 30);
+  print("Hewan 1 : ${hewan1.kategori} - ${hewan1.nama}");
+  print("${hewan1.berat} Kg");
+  print("${hewan1.jumlahKaki} Kaki");
+  print("------MAKAN 2 Kg-------");
+  hewan1.makan = 2;
+  print("SEKARANG ${hewan1.berat} Kg");
+  print("\n===============\n");
+  Ikan hewan2 = Ikan(kecepatanRenang: 7, berat: 2);
+  print("Hewan 2 : ${hewan2.kategori} - ${hewan2.nama}");
+  print("${hewan2.berat} Kg");
+  print("${hewan2.kecepatanRenang} Km/Jam");
+  print("------Makan 5 kg---------");
+  hewan2.makan = 5;
+  print("SEKARANG ${hewan2.berat} Kg");
+  print("\n===============\n");
+  Burung hewan3 = Burung(berat: 2, kecepatanTerbang: 40, jumlahKaki: 2 );
+  print("Hewan 3 : ${hewan3.kategori} - ${hewan3.nama}");
+  print("Berat ${hewan3.berat} Kg");
+  print("Kecepatan Terbang ${hewan3.kecepatanTerbang} Km/Jam");
+  print("Jumlah ${hewan3.jumlahKaki} Kaki");
+  print("------Makan 7 kg---------");
+  hewan3.makan = 7;
+  print("SEKARANG ${hewan3.berat} Kg");
+  print("\n===============\n");
+}
